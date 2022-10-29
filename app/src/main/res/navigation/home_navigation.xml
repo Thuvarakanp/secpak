@@ -2,12 +2,24 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/home_navigation"
     app:startDestination="@id/homeFragment">
 
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.example.thuvarakan.home.HomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_detailView"
+            app:destination="@id/detailView" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailView"
+        android:name="com.example.thuvarakan.DetailView"
+        android:label="fragment_detail_view"
+        tools:layout="@layout/fragment_detail_view" >
+        <action
+            android:id="@+id/action_detailView_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
 </navigation>
