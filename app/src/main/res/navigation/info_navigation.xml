@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/infoOneFragment">
+
+    <fragment
+        android:id="@+id/infoOneFragment"
+        android:name="com.example.thuvarakan.info.InfoOneFragment"
+        android:label="fragment_info_one"
+        tools:layout="@layout/fragment_info_one" >
+        <action
+            android:id="@+id/action_infoOneFragment_to_infoTwoFragment"
+            app:destination="@id/infoTwoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/infoTwoFragment"
+        android:name="com.example.thuvarakan.info.InfoTwoFragment"
+        android:label="fragment_info_two"
+        tools:layout="@layout/fragment_info_two" >
+        <action
+            android:id="@+id/action_infoTwoFragment_to_infoThreeFragment"
+            app:destination="@id/infoThreeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/infoThreeFragment"
+        android:name="com.example.thuvarakan.info.InfoThreeFragment"
+        android:label="fragment_info_three"
+        tools:layout="@layout/fragment_info_three" />
+</navigation>

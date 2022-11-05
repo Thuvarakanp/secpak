@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".appinfo">
+
+  <ImageView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="30dp"
+      android:src="@drawable/illus_one"
+      app:layout_constraintBottom_toTopOf="@+id/textView43"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent" />
+
+  <TextView
+      android:id="@+id/textView43"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Never"
+      android:textColor="@color/main_color"
+      android:layout_marginBottom="10dp"
+      android:textSize="14sp"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toTopOf="@+id/textView30"
+      tools:layout_editor_absoluteX="187dp" />
+
+  <TextView
+      android:id="@+id/textView30"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="25dp"
+      android:fontFamily="sans-serif"
+      android:text="Do not need suffer with big luggage \n while on a trip"
+      android:textAlignment="center"
+      android:textSize="14sp"
+      app:layout_constraintBottom_toTopOf="@+id/button3"
+      tools:layout_editor_absoluteX="93dp" />
+
+  <Button
+      android:id="@+id/button3"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="25dp"
+      android:layout_marginEnd="25dp"
+      android:text="Next"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      tools:layout_editor_absoluteY="658dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
